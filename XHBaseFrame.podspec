@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'XHBaseFrame'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of XHBaseFrame.'
+  s.summary          = 'iOS App basic Framework'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -28,7 +28,8 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/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/XHBaseFrame.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
+  s.swift_version = '5.0'
 
   s.source_files = 'XHBaseFrame/Classes/**/*'
   
@@ -37,6 +38,15 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.frameworks = 'UIKit'
+   s.dependency 'Moya/RxSwift', '14.0.0'
+   s.dependency 'RxTheme', '4.1.1'
+   s.dependency 'RxDataSources', '4.0.1'
+   s.dependency 'NSObject+Rx', '5.1.0'
+   s.dependency 'ObjectMapper', '4.2.0'
+   s.dependency 'ReactorKit', '2.1.1'
+   s.dependency 'URLNavigator', '2.3.0'
+   s.dependency 'SwifterSwift', '5.2.0'
+   s.dependency 'Kingfisher', '5.15.7'
+   s.dependency 'DZNEmptyDataSet', '1.8.1'
 end

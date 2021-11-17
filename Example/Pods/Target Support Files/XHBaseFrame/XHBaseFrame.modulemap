@@ -1,0 +1,6 @@
+framework module XHBaseFrame {
+  umbrella header "XHBaseFrame-umbrella.h"
+
+  export *
+  module * { export * }
+}
