@@ -1,6 +1,5 @@
-use_frameworks!
-
 platform :ios, '10.0'
+use_frameworks!
 
 target 'XHBaseFrame_Example' do
   pod 'XHBaseFrame', :path => '../'

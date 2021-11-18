@@ -21,13 +21,14 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/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/XHBaseFrame'
+  s.homepage         = 'https://github.com/haoXu1990/XHBaseFrame'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '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' => '286089659@qq.com' }
-  s.source           = { :git => 'https://github.com/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/XHBaseFrame.git', :tag => s.version.to_s }
+  s.author           = { 'xuhao' => '286089659@qq.com' }
+  s.source           = { :git => 'https://github.com/haoXu1990/XHBaseFrame.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
+#  s.requires_arc = true
   s.ios.deployment_target = '10.0'
   s.swift_version = '5.0'
 
@@ -48,5 +49,5 @@ TODO: Add long description of the pod here.
    s.dependency 'URLNavigator', '2.3.0'
    s.dependency 'SwifterSwift', '5.2.0'
    s.dependency 'Kingfisher', '5.15.7'
-   s.dependency 'DZNEmptyDataSet', '1.8.1'
+   s.dependency 'DZNEmptyDataSet', '1.8.1',
 end
