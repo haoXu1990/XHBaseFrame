@@ -29,7 +29,7 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
 #  s.requires_arc = true
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '11.0'
   s.swift_version = '5.0'
 
   s.source_files = 'XHBaseFrame/Classes/**/*'
@@ -38,16 +38,28 @@ TODO: Add long description of the pod here.
   #   'XHBaseFrame' => ['XHBaseFrame/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+   s.public_header_files = 'Pod/Classes/**/*.swift'
    s.frameworks = 'UIKit'
+   # 网络请求
    s.dependency 'Moya/RxSwift', '14.0.0'
+   # 主题
    s.dependency 'RxTheme', '4.1.1'
-   s.dependency 'RxDataSources', '4.0.1'
+   # logger
+   s.dependency 'SwiftyBeaver', '1.9.4'
+   # 序列化
    s.dependency 'NSObject+Rx', '5.1.0'
    s.dependency 'ObjectMapper', '4.2.0'
+   # 响应式框架
    s.dependency 'ReactorKit', '2.1.1'
+   # 路由
    s.dependency 'URLNavigator', '2.3.0'
+   # Swift sugger
    s.dependency 'SwifterSwift', '5.2.0'
+   # 图片
    s.dependency 'Kingfisher', '5.15.7'
-   s.dependency 'DZNEmptyDataSet', '1.8.1',
+   # 空视图
+   s.dependency 'DZNEmptyDataSet', '1.8.1'
+
+   # 非必须的
+   s.dependency 'RxDataSources', '4.0.1'
 end

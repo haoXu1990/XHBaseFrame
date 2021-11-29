@@ -3,23 +3,24 @@
   "version": "0.1.0",
   "summary": "iOS App basic Framework",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/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/XHBaseFrame",
+  "homepage": "https://github.com/haoXu1990/XHBaseFrame",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "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": "286089659@qq.com"
+    "xuhao": "286089659@qq.com"
   },
   "source": {
-    "git": "https://github.com/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/XHBaseFrame.git",
+    "git": "https://github.com/haoXu1990/XHBaseFrame.git",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "11.0"
   },
   "swift_versions": "5.0",
   "source_files": "XHBaseFrame/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*.swift",
   "frameworks": "UIKit",
   "dependencies": {
     "Moya/RxSwift": [
@@ -28,8 +29,8 @@
     "RxTheme": [
       "4.1.1"
     ],
-    "RxDataSources": [
-      "4.0.1"
+    "SwiftyBeaver": [
+      "1.9.4"
     ],
     "NSObject+Rx": [
       "5.1.0"
@@ -51,6 +52,9 @@
     ],
     "DZNEmptyDataSet": [
       "1.8.1"
+    ],
+    "RxDataSources": [
+      "4.0.1"
     ]
   },
   "swift_version": "5.0"

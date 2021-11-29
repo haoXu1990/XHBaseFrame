@@ -54,6 +54,7 @@ PODS:
   - SwifterSwift/StoreKit (5.2.0)
   - SwifterSwift/SwiftStdlib (5.2.0)
   - SwifterSwift/UIKit (5.2.0)
+  - SwiftyBeaver (1.9.4)
   - URLNavigator (2.3.0)
   - WeakMapTable (1.2.0)
   - XHBaseFrame (0.1.0):
@@ -66,6 +67,7 @@ PODS:
     - RxDataSources (= 4.0.1)
     - RxTheme (= 4.1.1)
     - SwifterSwift (= 5.2.0)
+    - SwiftyBeaver (= 1.9.4)
     - URLNavigator (= 2.3.0)
 
 DEPENDENCIES:
@@ -87,6 +89,7 @@ SPEC REPOS:
     - RxSwift
     - RxTheme
     - SwifterSwift
+    - SwiftyBeaver
     - URLNavigator
     - WeakMapTable
 
@@ -109,10 +112,11 @@ SPEC CHECKSUMS:
   RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
   RxTheme: 7cda2f036363a0b620cf07b3480cbbbbb00c1d25
   SwifterSwift: 334181863c416882d97b7a60c05054d9e4d799e2
+  SwiftyBeaver: 576177b2c5c94b3aedd5993914e91271a0524e88
   URLNavigator: 2593c0e2d293732ec5c44503cf54dceba1a68085
   WeakMapTable: 05c694ce8439a7a9ebabb56187287a63c57673d6
-  XHBaseFrame: 33a311708ece7f1068862f3603eca65b25d69ab7
+  XHBaseFrame: 2eda567cf282d91c4a738f8cd208f81dde11618f
 
-PODFILE CHECKSUM: ac48302ce65c5d3fc78951e59664ba608f4df2a7
+PODFILE CHECKSUM: 7285d6c3c7032a650f0ae7d187f460860d17f64c
 
 COCOAPODS: 1.11.2

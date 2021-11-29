@@ -2,7 +2,7 @@
 //  Bluetooth.swift
 //  ProjectApp
 //
-//  Created by jack on 2021/1/11.
+//  Created by Xuhao on 2021/11/11.
 //
 
 import Foundation
@@ -40,12 +40,10 @@ class Bluetooth: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate  {
         self.centralMgr = central
         switch central.state {
         case .poweredOn:
-            DLOG(message: "蓝牙打开")
             // 蓝牙已经打开，可以开始扫描蓝牙设备
             self.scanBluetooth()
             break;
         case .poweredOff:
-            DLOG(message: "蓝牙关闭")
             // 这里检测到蓝牙关闭，一般会弹框提醒用户开启蓝牙
             break
         default:
@@ -61,7 +59,7 @@ class Bluetooth: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate  {
     func scanBluetooth() -> Void {
         var options: [String: Any] = [String: Any]()
         options[CBCentralManagerScanOptionAllowDuplicatesKey] = NSNumber(value: false)
-        var services: [CBUUID]? // 这里可以通过筛选蓝牙的广播service来筛选扫描蓝牙
+        let services: [CBUUID]? = [] // 这里可以通过筛选蓝牙的广播service来筛选扫描蓝牙
         self.centralMgr.scanForPeripherals(withServices: services, options: options)
         // TODO 扫描时，一般需要开个定时器来处理扫描超时业务,自行添加
     }
@@ -87,23 +85,23 @@ class Bluetooth: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate  {
         }
         
         // 获取对方蓝牙广播中的厂家数据
-        if let manData = advertisementData[CBAdvertisementDataManufacturerDataKey] as? Data {
-            
-        }
-        // 获取对方蓝牙广播中的蓝牙名，从peripheral.name获取的蓝牙名可能是手机缓存中的名称，从广播中获取的是实时的名称
-        if let localName = advertisementData[CBAdvertisementDataLocalNameKey] as? String {
-            
-        }
-        
-        if let txPowerLevel = advertisementData[CBAdvertisementDataTxPowerLevelKey] as? NSNumber {
-            
-        }
-        if let serviceUUIDs = advertisementData[CBAdvertisementDataServiceUUIDsKey] as? [CBUUID] {
-            
-        }
-        if let serviceData = advertisementData[CBAdvertisementDataServiceDataKey] as? [String : Any] {
-            
-        }
+//        if let manData = advertisementData[CBAdvertisementDataManufacturerDataKey] as? Data {
+//            
+//        }
+//        // 获取对方蓝牙广播中的蓝牙名，从peripheral.name获取的蓝牙名可能是手机缓存中的名称，从广播中获取的是实时的名称
+//        if let localName = advertisementData[CBAdvertisementDataLocalNameKey] as? String {
+//            
+//        }
+//        
+//        if let txPowerLevel = advertisementData[CBAdvertisementDataTxPowerLevelKey] as? NSNumber {
+//            
+//        }
+//        if let serviceUUIDs = advertisementData[CBAdvertisementDataServiceUUIDsKey] as? [CBUUID] {
+//            
+//        }
+//        if let serviceData = advertisementData[CBAdvertisementDataServiceDataKey] as? [String : Any] {
+//            
+//        }
        // 其他的还有CBAdvertisementDataOverflowServiceUUIDsKey,CBAdvertisementDataIsConnectable,CBAdvertisementDataSolicitedServiceUUIDsKey
         
     }
